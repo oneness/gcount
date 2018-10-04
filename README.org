@@ -2,4 +2,4 @@
 Generates charts out of the result from google search term(s).
 
 * Usage
-I blogged about this here: [[https://www.birkey.com/2018-10-04-visualize-google-search-results-from-clojure-repl.html][Birkey Consulting Blog]]
+  I blogged about this here: [[https://www.birkey.co/2018-10-04-visualize-google-search-results-from-clojure-repl.html][Birkey Consulting Blog]]
