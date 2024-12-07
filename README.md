@@ -1,4 +1,5 @@
 ## Generate default chart
+For following search terms: "Clojure Programming" "Elixir Programming" "Elm Programming"
    ```
    git clone https://github.com/oneness/gcount.git ~/gcount && make -C ~/gcount gcount
 ```
