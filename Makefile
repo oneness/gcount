@@ -27,8 +27,9 @@ OS=`[ -f /etc/os-release ] && grep ^ID= /etc/os-release | cut -d = -f 2 || uname
 BOLD="\033[1m"
 NORMAL="\033[0m"
 
-help: ## Prints <target>: <dependencies> and what it does
-	@grep -E '^[a-zA-Z_-]+.*## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = "## "}; {printf "\033[1m%-32s\033[0m%s\n", $$1, $$2}'
+help: ## Prints target: [dep1 dep1 ...]  and what it does
+	@echo -e ${BOLD}
+	@grep -E '^[a-zA-Z_-]+.*## .*$$' $(MAKEFILE_LIST) |  sed 's/^Makefile://' | column -t -s"##"
 
 deps: ## Check deps
 	@mkdir -p /tmp
